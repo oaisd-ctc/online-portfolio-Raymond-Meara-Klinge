@@ -1,111 +1,155 @@
- body {
-     background-color: #131313;
-     color: rgb(255, 255, 255);
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
+html {
+    scroll-behavior: smooth;
+}
 
- /* Text */
- h1 {
-     display: inline;
-     padding-left: 20%;
-     font-size: 500%;
-     text-decoration:underline;
-     text-decoration-thickness: 5%;
-     text-decoration-color: rgb(225, 228, 68);
+body {
+    background-color: #131313;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
- }
+/* Text */
+h1 {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1%;
+    width: 100%;
+    font-size: 500%;
+    text-decoration: underline;
+    text-decoration-thickness: 3%;
+    text-decoration-color: rgb(225, 228, 68);
 
- h2 {
-     display: inline;
-     padding-left: 20%;
-     font-size: 200%;
-     text-decoration:overline;
-     text-decoration-thickness: 3%;
-     text-decoration-color: rgb(68, 209, 228);
- }
+}
 
- h4 {
-     font-size: 70%;
- }
+h2 {
+    display: inline;
+    padding-left: 20%;
+    font-size: 200%;
+    text-decoration: overline;
+    text-decoration-color: rgb(68, 209, 228);
+    text-decoration-thickness: 3%;
+}
 
- p {
-     padding-left: 10%;
-     font-size: 100%;
- }
- 
- ul {
-     padding-top: .5%;
-     padding-bottom: .5%;
-     padding-left: 10%;
-     font-size: 100%;
- }
+h4 {
+    font-size: 70%;
+}
 
- li {
-     padding: .25%
- }
+p {
+    padding-left: 10%;
+    font-size: 100%;
+    line-height: 150%;
+}
 
- /* Sidebar, Logo, and Footer */
- nav {
-     display: block;
-     position: fixed;
-     width: 7%;
-     padding-left: 1%;
- }
+ul {
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: 10%;
+    font-size: 100%;
+}
 
- #logo {
-     position: fixed;
-     display: block;
-     width: 15%;
-     right: 1%;
-     top: 3%;
- }
+li {
+    padding: .25%
+}
 
- footer {
-     display: block;
-     position: fixed;
-     bottom: 0;
-     left: 33%;
-     right: 33%;
-     text-align: center;
-     background-color: #131313;
- }
+/* Sidebar, Logo, and Footer */
+nav {
+    display: block;
+    position: fixed;
+    width: 7%;
+    padding-left: 1%;
+}
 
- /* Sidebar Adjustments*/
- #menu {
-     width: 3.25%;
-     position: fixed;
-     z-index: 1;
-     top: 2%;
-     left: 1.15%;
-     bottom: 0;
- }
+#logo {
+    position: fixed;
+    display: block;
+    width: 15%;
+    right: 1%;
+    top: 3%;
+}
 
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 33%;
+    right: 33%;
+    text-align: center;
+    background-color: #131313;
+}
 
- #main-links a {
-     display: flex;
-     text-align: left;
-     font-size: 1.25em;
-     padding-bottom: 5em;
-     text-decoration: none;
-     color: rgb(133, 225, 228);
-     transition: 500ms;
- }
+/* Hyperlink Adjustments*/
 
- #main-links a:hover {
-     transition: 500ms;
-     color: rgb(255, 230, 0);
- }
+#main-links a {
+    display: inline-flex;
+    font-size: 1.25em;
+    padding-bottom: 5em;
+    text-decoration: none;
+    color: rgb(133, 225, 228);
+    transition: 500ms;
+}
 
+#main-links a:hover {
+    transition: 500ms;
+    color: rgb(255, 230, 0);
+}
+#main-page a {
+    display: flex;
+    justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left:33%;
+    margin-right:33%;
+    font-size: 2em;
+    padding-bottom: 3em;
+    text-decoration: none;
+    color: rgb(133, 225, 228);
+    transition: 500ms;
+}
 
- /* Titles */
- #cert {
-     padding-left: 10%;
- }
+#main-page a:hover {
+    transition: 500ms;
+    color: rgb(255, 230, 0);
+}
 
- #exp {
-     padding-left: 10%;
- }
+.links {
+    color: rgb(133, 225, 228);
+    padding-left: 15%;
+    transition: 500ms;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
 
- #about {
-     padding-left: 10%;
- }
+.links:hover {
+    color: rgb(255, 238, 88);
+    transition: 500ms;
+}
+
+/* Titles */
+#cert {
+    padding-left: 10%;
+}
+
+#exp {
+    padding-left: 10%;
+}
+
+#about {
+    padding-left: 10%;
+}
+
+/* Size Adjust */
+@media only screen and (max-width: 855px) {
+    nav {
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 860px) {
+    footer {
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: #13131300;
+    }
+}
